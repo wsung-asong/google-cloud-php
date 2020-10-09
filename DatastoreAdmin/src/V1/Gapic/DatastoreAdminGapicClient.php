@@ -36,14 +36,14 @@ use Google\ApiCore\RetrySettings;
 use Google\ApiCore\Transport\TransportInterface;
 use Google\ApiCore\ValidationException;
 use Google\Auth\FetchAuthTokenInterface;
-use Google\Cloud\Datastore\Admin\V1\EntityFilter;
-use Google\Cloud\Datastore\Admin\V1\ExportEntitiesRequest;
-use Google\Cloud\Datastore\Admin\V1\ExportEntitiesResponse;
-use Google\Cloud\Datastore\Admin\V1\GetIndexRequest;
-use Google\Cloud\Datastore\Admin\V1\ImportEntitiesRequest;
-use Google\Cloud\Datastore\Admin\V1\Index;
-use Google\Cloud\Datastore\Admin\V1\ListIndexesRequest;
-use Google\Cloud\Datastore\Admin\V1\ListIndexesResponse;
+use Google\Datastore\Admin\V1\EntityFilter;
+use Google\Datastore\Admin\V1\ExportEntitiesRequest;
+use Google\Datastore\Admin\V1\ExportEntitiesResponse;
+use Google\Datastore\Admin\V1\GetIndexRequest;
+use Google\Datastore\Admin\V1\ImportEntitiesRequest;
+use Google\Datastore\Admin\V1\Index;
+use Google\Datastore\Admin\V1\ListIndexesRequest;
+use Google\Datastore\Admin\V1\ListIndexesResponse;
 use Google\LongRunning\Operation;
 
 /**
@@ -553,7 +553,7 @@ class DatastoreAdminGapicClient
      *          {@see Google\ApiCore\RetrySettings} for example usage.
      * }
      *
-     * @return \Google\Cloud\Datastore\Admin\V1\Index
+     * @return \Google\Datastore\Admin\V1\Index
      *
      * @throws ApiException if the remote call fails
      * @experimental
