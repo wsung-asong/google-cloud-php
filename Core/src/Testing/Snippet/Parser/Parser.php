@@ -351,7 +351,7 @@ class Parser
         return $classes['\\' . $class->getName()]->getDocBlock();
     }
 
-    private function getMethodDocBlock($class, $method): ?DocBlock
+    private function getMethodDocBlock($class, $method)
     {
         $fileName = $method->getFileName();
         $className = '\\' . $method->getDeclaringClass()->getName();
